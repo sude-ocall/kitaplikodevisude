@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tatlı mor-mavi-pembe tema 💜💙💖 */
+body {
+  background: linear-gradient(135deg, #f3e8ff, #e0b3ff, #cdb4ff);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+h1, h2, h3 {
+  color: #7b2cbf;
+}
+
+.kitap-liste {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.kitap-karti {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(123, 44, 191, 0.1);
+  transition: all 0.3s ease;
+}
+
+.kitap-karti:hover {
+  transform: scale(1.03);
+}
+
+.favori-btn {
+  background: linear-gradient(90deg, #c77dff, #7b2cbf);
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.25s ease;
+  margin-top: 10px;
+}
+
+.favori-btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.15);
+}
+
+.favori-btn.favori {
+  background: linear-gradient(90deg, #ffb3c6, #ff85a2);
+}
